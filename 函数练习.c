@@ -82,18 +82,18 @@
 //	return 0;
 //}
 
-//递归   不创建临时变量，求字符串长度
-int lenth(char* a)
-{
-	if (*a != '\0')
-	{
-		return 1 + lenth(a + 1);
-	}
-	return 0;
-}
-int main()
-{
-	char arr[] = { "four" };
-	printf("%d", lenth(arr));
-	return 0;
-}
+////递归   不创建临时变量，求字符串长度
+//int lenth(char* a)
+//{
+//	if (*a != '\0')
+//	{
+//		return 1 + lenth(a + 1);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	char arr[] = { "four" };
+//	printf("%d", lenth(arr));
+//	return 0;
+//}

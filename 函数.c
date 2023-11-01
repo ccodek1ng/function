@@ -106,3 +106,36 @@
 //	apart0(a);
 //	return 0;
 //}
+
+//ì³²¨ÄÇÆõÊı
+long fib(unsigned int n)
+{
+	if (n <= 2)
+		return 1;
+	else
+		return fib(n - 1) + fib(n - 2);
+}
+long fib1(unsigned int n)
+{
+	int i = 2;
+	if (n <= 2)
+		return 1;
+	else
+	{
+		int m = 0;
+		while (i <= n)
+		{
+			i++;
+			m += fib1(i - 2) + fib1(i - 1);
+		}
+	}
+	return m + 2;
+}
+int main()
+{
+	unsigned int n;
+	scanf("%d", &n);
+	printf("%d\n", fib1(n));
+	printf("%d\n", fib(n));
+	return 0;
+}
